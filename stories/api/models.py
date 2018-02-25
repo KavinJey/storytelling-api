@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Story(models.Model):
     title = models.CharField(max_length=22)
-    description = models.CharField(max_length=500)
+    description = models.CharField(max_length=2500)
 
 
 
@@ -14,7 +14,7 @@ class Question(models.Model):
 
 class Answer(models.Model):
     question = models.ForeignKey(Question, related_name='answers', on_delete=models.CASCADE)
-    text = models.CharField(max_length=500)
+    text = models.CharField(max_length=2500)
     nextQuestion = models.IntegerField(blank=True)  # This is just questionID
     anim = models.CharField(max_length=4)
     damage = models.IntegerField()
