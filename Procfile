@@ -1,1 +1,1 @@
-web: gunicorn stories.wsgi --pythonpath=storiesg --log-file -
+web: gunicorn stories.wsgi --pythonpath=stories --log-file -
