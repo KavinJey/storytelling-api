@@ -50,7 +50,7 @@ def snippet_detail(request, title):
         snippet.delete()
         return HttpResponse(status=204)
 
-
+@csrf_exempt
 def entry(request): 
     html = "<html><body> <h1> Hello Masses </h1>  </body></html>" 
     return HttpResponse(html)
