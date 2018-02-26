@@ -4,5 +4,5 @@ from api.views import *
 urlpatterns = [
     url(r'^stories/$', snippet_list),
     url(r'^stories/([^\s]+)/$', snippet_detail),
-    url(r'^stories/entry/$', entry), 
+    url(r'^entry/$', entry), 
 ]
