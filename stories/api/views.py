@@ -53,6 +53,6 @@ def snippet_detail(request, title):
 
 def entry(request): 
     now = datetime.datetime.now()
-    html = "<html><body>It is now %s.</body></html>" % now
+    html = "<html><body> <h1> Hello Masses </h1>  </body></html>" 
     return HttpResponse(html)
 
